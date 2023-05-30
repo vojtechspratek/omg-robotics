@@ -32,7 +32,7 @@ namespace customExtension {
      */
     // Variant with generating an event
     // Example usage: customExtension.observeButtonPress(pin, false);
-    export function ButtonPressEvent(pin: number): void {
+    export function buttonPressEvent(pin: number): void {
         if (pins.digitalReadPin(pin) == 0) {
             control.raiseEvent(
                 EventBusSource.MICROBIT_ID_IO_P0 + pin,
