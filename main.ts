@@ -3,6 +3,8 @@ namespace omgRobotics {
      * Set LED state to ON (turn on) for the specified output pin.
      * @param pin The output pin to control the LED.
      */
+    //% blockId=omgroboticssetled
+    //% block="(LED) $index"
     export function setLedOn(pin: number): void {
         pins.digitalWritePin(pin, 1);
     }
