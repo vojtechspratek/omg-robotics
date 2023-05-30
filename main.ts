@@ -1,44 +1,17 @@
-namespace customExtension {
+namespace omgRobotics {
     /**
-     * Observe button press with specified input pin.
-     * @param pin The input pin to observe.
-     * @param returnBoolean Whether to return a boolean value indicating the button press.
-     *                      If false, it will generate an event instead.
-     * @returns True if the button is pressed (if returnBoolean is true).
+     * Set LED state to ON (turn on) for the specified output pin.
+     * @param pin The output pin to control the LED.
      */
-    // Variant with returning a boolean value
-    // Example usage: let buttonPressed = customExtension.observeButtonPress(pin, true);
-    export function observeButtonPress(pin: number, returnBoolean: boolean): boolean {
-        let buttonPressed = false;
-        if (pins.digitalReadPin(pin) == 0) {
-            buttonPressed = true;
-        }
-
-        if (returnBoolean) {
-            return buttonPressed;
-        } else {
-            control.raiseEvent(
-                EventBusSource.MICROBIT_ID_IO_P0 + pin,
-                EventBusValue.MICROBIT_BUTTON_EVT_CLICK
-            );
-            return false;
-        }
+    export function setLedOn(pin: number): void {
+        pins.digitalWritePin(pin, 1);
     }
 
     /**
-     * Observe button press with specified input pin.
-     * Generates an event when the button is pressed.
-     * @param pin The input pin to observe.
+     * Set LED state to OFF (turn off) for the specified output pin.
+     * @param pin The output pin to control the LED.
      */
-    // Variant with generating an event
-    // Example usage: customExtension.observeButtonPress(pin, false);
-    export function buttonPressEvent(pin: number): void {
-        if (pins.digitalReadPin(pin) == 0) {
-            control.raiseEvent(
-                EventBusSource.MICROBIT_ID_IO_P0 + pin,
-                EventBusValue.MICROBIT_BUTTON_EVT_CLICK
-            );
-        }
+    export function setLedOff(pin: number): void {
+        pins.digitalWritePin(pin, 0);
     }
 }
-
