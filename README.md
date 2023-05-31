@@ -1,6 +1,19 @@
 
 > Otevřít tuto stránku v aplikaci [https://vojtechspratek.github.io/omg-robotics/](https://vojtechspratek.github.io/omg-robotics/)
 
+## Usage
+
+### ``setLed``
+
+Use the ``setLed` block to control LEDs.
+
+```blocks
+for(let i = 0; i<25; i++){
+    screenMagic.plotAt(i)
+    basic.pause(500)   
+}
+```
+
 ## Použít jako rozšíření
 
 Toto úložiště lze přidat jako **rozšíření** v aplikaci MakeCode.
@@ -18,12 +31,6 @@ Slouží k úpravě tohoto úložiště v aplikaci MakeCode.
 * klikněte na možnost **Import** a poté na **Import adresy URL**
 * vložte **https://github.com/vojtechspratek/omg-robotics** a klikněte na možnost import
 
-## Blocks preview
-
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
-
-![A rendered view of the blocks](https://github.com/vojtechspratek/omg-robotics/raw/master/.github/makecode/blocks.png)
 
 #### Metadata (slouží k vyhledávání, vykreslování)
 
