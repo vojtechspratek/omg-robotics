@@ -4,7 +4,8 @@ namespace omgRobotics {
      * @param pin The output pin to control the LED.
      */
     //% blockId=omgroboticssetled
-    //% block="(LED)"
+    //% block="(LED) $index"
+    //% index.min=0 index.max=25
     export function setLedOn(pin: number): void {
         pins.digitalWritePin(pin, 1);
     }

@@ -7,7 +7,7 @@ class omgRobotics:
     
     """
     # % blockId=omgroboticssetled
-    # % block="(LED) $index"
+    # % block="(LED)"
     def setLedOn(pin: number):
         pins.digital_write_pin(pin, 1)
     """
