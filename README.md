@@ -5,7 +5,7 @@
 
 ### ``setLed``
 
-Use the ``setLed` block to control LEDs.
+Use the ``setLed`` block to control LEDs.
 
 ```blocks
 for(let i = 0; i<25; i++){
