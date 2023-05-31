@@ -6,15 +6,14 @@ namespace omgRobotics {
     //% blockId=omgroboticssetled
     //% block="(LED) $index"
     //% index.min=0 index.max=25
-    export function setLedOn(pin: number): void {
-        pins.digitalWritePin(pin, 1);
-    }
+    export function setLed(pin: number): void {
+        if (input.onPinPressed(TouchPin.P0, function () {
+        })){
+            led.toggleAll()
+        }
+        else if (input.onPinPressed(TouchPin.P1, function () {
+        })) {
 
-    /**
-     * Set LED state to OFF (turn off) for the specified output pin.
-     * @param pin The output pin to control the LED.
-     */
-    export function setLedOff(pin: number): void {
-        pins.digitalWritePin(pin, 0);
+        }
     }
 }
