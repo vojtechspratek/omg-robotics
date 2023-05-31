@@ -7,12 +7,6 @@
 
 Use the ``setLed`` block to control LEDs.
 
-```blocks
-for(let i = 0; i<25; i++){
-    screenMagic.plotAt(i)
-    basic.pause(500)   
-}
-```
 
 ## Použít jako rozšíření
 
