@@ -1,6 +1,6 @@
 namespace omgRobotics {
     /**
-     * Set LED state to ON (turn on) for the specified output pin.
+     * LED control for P0 & P1
      * @param pin The output pin to control the LED.
      */
     //% blockId=omgroboticssetled
@@ -13,7 +13,7 @@ namespace omgRobotics {
         }
         else if (input.onPinPressed(TouchPin.P1, function () {
         })) {
-
+            //pass
         }
     }
 }
